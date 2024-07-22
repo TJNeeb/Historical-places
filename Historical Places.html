@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Historical Places.css">
+<header class="header" id="header">
+    <div class="logo">     <a href="site.html"> <img src="SVSULOGO.png"></a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+       <a href="savedItems.html">      Saved </a>
+        <a href="About me.html">          Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+<title>Cardinal Spots - Historical Places</title>
+
+
+
+
+ 
+
+
+
+<div class="photo">
+   
+<img src="Historical Places header.png">
+<div class="centeredtext">
+<h1>Historical Places</h1>
+
+</div>
+
+
+
+<body>
+
+
+<div class="grid-container">
+
+    <div class="grid-item">
+        <img src="Hoyt.jpg">
+        <img src="Hoyt2.jpg">
+
+
+        <div class="text">
+            <h1><u>Hoyt Public Library</u></h1>
+
+        </div>
+
+        <div class="text">
+
+            <h3> 505 Janes Ave, Saginaw, MI 48607</h3>
+            <h3>Hours: 9am - 5pm. Monday - Saturday</h3>
+            <h3><a href="https://www.saginawlibrary.org/">Hoyt Public Library</a></h3>
+            <button class="bookmark-btn"></button>
+
+        </div>
+
+
+
+    </div>
+    <div class="grid-item">
+
+        <img src="Bay County Historical Society.jpg">
+        <img src="Bay County Historical2.jpg">
+
+        <div class="text">
+            <h3><u>Bay County Historical Society</u></h3>
+
+        </div>
+
+        <div class="text">
+            <h3>321 Washington Ave, Bay City, MI 48708</h3>
+            <h3>Hours: 10am - 4pm, Tuesday - Friday</h3>
+            <h3><a href="http://www.bchsmuseum.org/">Bay County Historical Society</a></h3>
+            <button class="bookmark-btn"></button>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="grid-item">
+        <img src="Cassriver.jpg">
+       <img src="Cassriver2.jpg">
+
+
+        <div class="text">
+
+            <h1><u>Cass River Bridge</u></h1>
+        </div>
+
+        <div class="text">
+            <h3>Cass River Park Trail, Saginaw, MI 48601</h3>
+            <h3></h3>
+            <button class="bookmark-btn"></button>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="grid-item">
+        <img src="HerbertD2.jpg">
+        <img src="HerbertD.jpg">
+
+
+        <div class="text">
+            <h1><u>
+                Herbert D. Doan Midland County History Center</u></h1>
+
+        </div>
+
+        <div class="text">
+            <h3>3417 W Main St, Midland, MI 48640</h3>
+            <h3>Hours: 8:30am - 5pm, Monday - Friday</h3>
+            <h3>8:30am - 3pm, Saturday</h3>
+            <h3><a href="https://www.midlandcenter.org/museums/midland-county-historical-society/"> Midland County Historical Center</a></h3>
+            <button class="bookmark-btn"></button>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="grid-item">
+        <img src="Alden.jpg">
+        <img src="Alden2.jpg">
+
+
+        <div class="text">
+            <h1><u>Alden B. Dow Home & Studio
+            </u></h1>
+
+        </div>
+
+        <div class="text">
+            <h3>315 Post St, Midland, MI 48640</h3>
+            <h3>Hours: 8am - 5pm, Monday - Friday</h3>
+            <h3>11am - 12:30pm, Saturday</h3>
+            <h3>Area: 27 acres</h3>
+            <h3><a href="https://www.abdow.org/">Alden B. Dow Home & Studio</a></h3>
+            <button class="bookmark-btn"></button>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="grid-item">
+
+        <img src="Pride and Country.jpg">
+        <img src="Pride and Country2.jpg">
+
+        <div class="text">
+            <h1><u>Pride and Country Village</u></h1>
+
+        </div>
+
+        <div class="text">
+            <h3>5965 E Holland Rd, Saginaw, MI 48601</h3>
+            <h3>Hours: 10am - 5pm, Monday - Saturday</h3>
+            <h3>11am - 5pm, Sunday</h3>
+            <h3><a href="https://prideandcountry.com/">Pride and Country Village</a></h3>
+            <button class="bookmark-btn"></button>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        /*
+       // Add click event listeners to bookmark buttons
+       document.querySelectorAll('.bookmark-btn').forEach(button => {
+              button.addEventListener('click', function() {
+                  this.classList.toggle('bookmarked');
+    
+                  if (this.classList.contains('bookmarked')) {
+                      // Save the item if bookmarked
+                      saveItem(this.parentElement);
+                  } else {
+                      // Unsave the item if unbookmarked
+                      unsaveItem(this.parentElement);
+                  }
+              });
+          });
+    
+          function saveItem(item) {
+              console.log('Item bookmarked:', item);
+              // Add your saving logic here (e.g., add to local storage)
+          }
+    
+          function unsaveItem(item) {
+              console.log('Item unbookmarked:', item);
+              // Add your unsaving logic here (e.g., remove from local storage)
+          }
+          */
+    
+    
+          document.addEventListener('DOMContentLoaded', function() {
+              const savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+    
+              document.querySelectorAll('.grid-item').forEach(item => {
+                  const button = item.querySelector('.bookmark-btn');
+                  const itemId = item.getAttribute('data-id');
+    
+                  if (savedItems.includes(itemId)) {
+                      button.classList.add('bookmarked');
+                  }
+    
+                  button.addEventListener('click', function() {
+                      this.classList.toggle('bookmarked');
+                      if (this.classList.contains('bookmarked')) {
+                          saveItem(itemId, item);
+                      } else {
+                          unsaveItem(itemId);
+                      }
+                  });
+              });
+    
+              function saveItem(itemId, item) {
+                  let savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+                  if (!savedItems.includes(itemId)) {
+                      savedItems.push(itemId);
+                      localStorage.setItem('savedItems', JSON.stringify(savedItems));
+                      localStorage.setItem(`savedItem-${itemId}`, item.innerHTML);
+                  }
+              }
+    
+              function unsaveItem(itemId) {
+                  let savedItems = JSON.parse(localStorage.getItem('savedItems')) || [];
+                  savedItems = savedItems.filter(id => id !== itemId);
+                  localStorage.setItem('savedItems', JSON.stringify(savedItems));
+                  localStorage.removeItem(`savedItem-${itemId}`);
+              }
+          });
+    </script>
+    
+    
+    
+
+
+
+
+</body>
